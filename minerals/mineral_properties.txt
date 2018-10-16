@@ -1,0 +1,25 @@
+Physical Properties of Minerals
+
+There are approximately 4000 different minerals, and each of those minerals has a unique set of physical properties. These include: 
+color, 
+streak, 
+hardness, 
+luster, 
+specific gravity, 
+cleavage, 
+fracture, 
+and many more. 
+These physical properties are useful for identifying minerals. However, they are much more important in determining the potential industrial uses of the mineral.
+
+Mohs' Hardness Scale:
+
+1. Talc
+2. Gypsum
+3. Calcite
+4. Fluorite
+5. Apatite
+6. Plagioclase Feldspar
+7. Quartz
+8. Topaz
+9. Corundum
+10.Diamond
