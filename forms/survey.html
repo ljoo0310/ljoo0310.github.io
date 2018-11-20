@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Music Survey</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+<style>
+body {
+font-size: 1.3em;
+background-color: beige;
+}
+content{
+width:90%;
+margin:auto;
+}
+h1 {
+text-align:center;
+}
+form {
+margin-left:5%;
+}
+input {
+<--!margin-bottom:2%;-->
+}
+input#submit {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+</style>
+</head>
+
+<body>
+  <content>
+<h1>Music Survey</h1>
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  <br>First Name: <input type="text" name="first name"><br>
+  <br>Last Name: <input type="text" name="last name"><br>
+  <br>Email: <input type="email" name="email" required><br>
+
+  <p>Select Your Favorite Type of Music</p>
+  <input type="checkbox" name="genre1" value="pop">Pop<br>
+  <input type="checkbox" name="genre2" value="classical">Classical<br>
+  <input type="checkbox" name="genre3" value="rock">Rock<br>
+  <input type="checkbox" name="genre4" value="folk">Folk<br>
+  <input type="checkbox" name="genre5" value="Rap">Rap<br>
+  <input type="checkbox" name="genre6" value="Other">Other<br>
+
+  <p>How often do you purchase CDs?</p>
+  <input type="radio" name="time1" value="weekly">Weekly<br>
+  <input type="radio" name="time2" value="few">A few per year<br>
+  <input type="radio" name="time3" value="monthly">Monthly<br>
+  <input type="radio" name="time4" value="never">Never<br>
+
+  <p>Select the locations you listen to music:</p>
+  <select name="locations">
+    <option value="home">At Home</option>
+    <option value="library">At the Library</option>
+    <option value="outside">Outside</option>
+  </select><br>
+
+  <p>What role does music play in your life?</p>
+  <textarea rows="3" cols="60"></textarea><br>
+
+  <input type="submit" value="Submit">
+</form>
+</content>
+</body>
+</html>
