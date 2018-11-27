@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Inclass Forms</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+<style>
+label {
+  font-weight:bold;
+  color:green;
+}
+#range{
+  color:red;
+}
+.column {
+  float:left;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+<content>
+<h1>Inclass Forms</h1>
+<div class="column">
+<form action="https://idesstage2.bc.edu/class/results.php" method="post">
+  <br>
+  <label for="iname">name: </label>
+  <input type="text" id="iname" name="name"><br><br>
+  <label for="iemail">email: </label>
+  <input type="email" id="iemail" name="email" required><br><br>
+  <label><span id="range">range: <input type="number" name="range" min="1"
+    max="100" onchange="showValue(this.value)"></span></label><br>
+  <label><p>Select a fruit:</p></label>
+  <select name="datalist">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="orange">Orange</option>
+    <option value="mango">Mango</option>
+    <option value="lemon">Lemon</option>
+  </select><br><br>
+  <input type="submit"><br><br>
+  <input type="image" src="submit.jpg"><br>
+</form>
+</div>
+
+<div class="column">
+  <figure>
+    <img src="fruits.jpg" alt="Fruits" width="300px">
+    <figcaption>Photo of fruits</figcaption>
+  </figure>
+</div>
+
+<script type="text/javascript">
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+</body>
+</html>
