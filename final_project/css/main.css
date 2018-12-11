@@ -314,7 +314,7 @@ ul.style2 li {
 	justify-content: center;
 	position: relative;
 	height: 24em;
-	background: url("../../images/banner.png") center center;
+	background: url("../images/banner.png") center center;
 	background-size: cover;
 	padding: 0;
 }
@@ -364,15 +364,20 @@ ul.style2 li {
 	padding: 0 1.5em 0 1.5em;
 }
 
+#nav > ul > .current {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#nav > ul > .current > ul{
+	font-weight: normal;
+	text-decoration: none;
+}
+
 #nav > ul > li {
 	display: inline-block;
 	text-align: center;
 	padding: 0 1.5em 0 1.5em;
-}
-
-#nav > ul > .current {
-	font-weight: bold;
-	text-decoration: underline;
 }
 
 #nav > ul > li > a {
