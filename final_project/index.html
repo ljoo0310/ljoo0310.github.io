@@ -8,7 +8,56 @@
 	  <meta name="author" content="Luke (Yehoon) Joo">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+		/* Header */
+		#header {
+			height: 30em;
+		}
+		/* Footer */
+		#footer {
+			background: #43435C; /* url("images/overlay.png");*/
+			color: #eee;
+			padding-bottom: 2em;
+		}
+		#footer .title {
+			background: #43435C;
+			color: #eee;
+		}
+		/* See Movies buttons */
+		ul.actions {
+			list-style: none;
+			padding-left: 0;
+			margin: 3em 0 0 0;
+		}
+		ul.actions li {
+			display: inline-block;
+			margin: 0 0.75em 0 0.75em;
+			padding-left: 0;
+		}
+		/* Form */
+		form input[type="text"],
+		form input[type="email"],
+		form select,
+		form textarea {
+			-moz-transition: all .25s ease-in-out;
+			-webkit-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+			-webkit-appearance: none;
+			display: block;
+			border: 0;
+			background: #eee;
+			box-shadow: inset 0px 0px 1px 0px #a0a1a7;
+			border-radius: 0.35em;
+			width: 100%;
+			padding: 0.75em 1em 0.75em 1em;
+		}
+		form ul.actions {
+			margin-top: 0;
+		}
+		</style>
 	</head>
+
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
@@ -17,102 +66,101 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index">Korean Movie Reviews</a></h1>
+							<h1><a href="index.html">Korean Movie Reviews</a></h1>
 							<p>For those seeking a new taste of movies</p>
 						</div>
 
 					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="crime.html">Crime</a>
-									<ul>
-										<li><a href="#">Old Boy</a></li>
-				            <li><a href="#">New World</a></li>
-				            <li><a href="#">Believer</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="drama.html">Drama</a>
-									<ul>
-										<li><a href="#">Little Forest</a></li>
-										<li><a href="#">The King of Jokgu</a></li>
-				            <li><a href="#">Scandal Makers</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="romance.html">Romance</a>
-									<ul>
-										<li><a href="#">Beauty Inside</a></li>
-				            <li><a href="#">Architecture 101</a></li>
-				            <li><a href="#">Love 911</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="thriller.html">Thriller</a>
-									<ul>
-										<li><a href="#">Train to Busan</a></li>
-				            <li><a href="#">I Saw the Devil</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Home</a></li>
+							<li>
+								<a href="crime.html">Crime</a>
+								<ul>
+									<li><a href="#">Old Boy</a></li>
+									<li><a href="#">New World</a></li>
+									<li><a href="#">Believer</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="drama.html">Drama</a>
+								<ul>
+									<li><a href="#">Little Forest</a></li>
+									<li><a href="#">The King of Jokgu</a></li>
+									<li><a href="#">Scandal Makers</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="romance.html">Romance</a>
+								<ul>
+									<li><a href="#">Beauty Inside</a></li>
+									<li><a href="#">Architecture 101</a></li>
+									<li><a href="#">Love 911</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="thriller.html">Thriller</a>
+								<ul>
+									<li><a href="#">Train to Busan</a></li>
+									<li><a href="#">I Saw the Devil</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
 				</section>
 
-				<!-- Highlights -->
-					<section id="highlights" class="wrapper style3">
+					<section class="wrapper style3">
 						<div class="title">Select Your Genre</div>
 						<div class="container">
 							<div class="row aln-center">
 								<div class="col-6 col-12-medium">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/oldboy.png"
+										<a href="#"><img src="images/oldboy.png"
 											alt="Crime genre movie image" /></a>
-										<h3><a href="#">Crime</a></h3>
+										<h3>Crime</a></h3>
 										<p>Did you know that guns are illegal in Korea? So just having a gun
 											can make you a criminal. It may be a shame for you gun fans but hey,
-											sometimes all you need is an old decent hammer.</p>
+											sometimes all you need is an old fashioned hammer.</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">See Movies</a></li>
+											<li><a href="#" class="button">See Movies</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/littleForest.png"
+										<a href="#"><img src="images/littleForest.png"
 											alt="Drama genre movie image" /></a>
-										<h3><a href="#">Drama</a></h3>
+										<h3>Drama</a></h3>
 										<p>Life can get pretty dull when you just study at school or go to work every
 											day, every week. But that doesn't stop you from enjoying the small
 											moments of joy that present themselves on the way.</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">See Movies</a></li>
+											<li><a href="#" class="button">See Movies</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/beautyInside.png"
+										<a href="#"><img src="images/beautyInside.png"
 											alt="Romance genre movie image" /></a>
-										<h3><a href="#">Romance</a></h3>
+										<h3>Romance</a></h3>
 										<p>Everyone can use a good love story. And the more relatable, the more
 											appealing the story becomes. From first crushes to complicated
 											relationships, there's bound to be a memory that these films bring back.</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">See Movies</a></li>
+											<li><a href="#" class="button">See Movies</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
 									<section class="highlight">
-										<a href="#" class="image featured"><img src="images/trainToBusan.png"
+										<a href="#"><img src="images/trainToBusan.png"
 											alt="Thriller genre movie image" /></a>
-										<h3><a href="#">Thriller</a></h3>
+										<h3>Thriller</a></h3>
 										<p>Not many of us live a thriller-life. But that's probably a good thing as you wouldn't want
 											to be in these guys' shoes. Buckle up for some thriller packed movies.</p>
 										<ul class="actions">
-											<li><a href="#" class="button style1">See Movies</a></li>
+											<li><a href="#" class="button">See Movies</a></li>
 										</ul>
 									</section>
 								</div>
@@ -122,32 +170,43 @@
 
 			<!-- Footer -->
 				<section id="footer" class="wrapper">
-					<div class="title">Want More?</div>
+					<div class="title">Know any other movies?</div>
 					<div class="container">
-						<header class="style1">
-							<h2>Recommendations</h2>
+						<header>
+							<h2 style="color:white;">Movie Recommendations</h2>
 							<p>
-								If these weren't enough for you, don't worry! I got more for you. <br>
-								Just simply type in your name and email, and select the movie genre(s) you like. <br>
-								You can even add a short description of what kind of movies you like just to be sure. <br>
-								Press the submit button below and I'll get back to you soon with a list of personal recommendations.
+								Do you have any great movies to recommend? Sweet! <br>
+								Let me know and if I like it too, perhaps I can add it onto this website. <br>
+								I would also love to read your own short review about it so don't be shy! <br>
+								It's always great to get to know a new good movie.
 							</p>
 						</header>
 						<div class="row">
-							<article class="box post">
+							<article>
 
-								<!-- Contact Form -->
+								<!-- Recommendation Form -->
 									<section>
-										<form method="post" action="https://idesweb.bc.edu/class/results.php">
-											<div class="row gtr-50">
+										<form method="post" action="https://idesstage2.bc.edu/class/results.php">
+											<div class="row">
 												<div class="col-6 col-12-small">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
+													<input type="text" name="name" id="name"
+														placeholder="Your Name" required/>
 												</div>
 												<div class="col-6 col-12-small">
-													<input type="email" name="email" id="contact-email" placeholder="Email" />
+													<input type="text" name="title" id="title"
+														placeholder="Movie Title" required/>
 												</div>
-												<div class="col-12">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												<div class="col-4">
+													<p>The Movie's Genre:</p>
+												  <input type="radio" name="genre" value="crime">Crime<br>
+												  <input type="radio" name="genre" value="drama">Drama<br>
+												  <input type="radio" name="genre" value="romance">Romance<br>
+												  <input type="radio" name="genre" value="thriller">Thriller<br>
+													<input type="radio" name="genre" value="other">Other<br>
+												</div>
+												<div class="col-8">
+													<textarea name="description" id="description"
+														placeholder="Description" rows="5"></textarea>
 												</div>
 												<div class="col-12">
 													<ul class="actions">
