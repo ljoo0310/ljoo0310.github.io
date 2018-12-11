@@ -370,6 +370,11 @@ ul.style2 li {
 	padding: 0 1.5em 0 1.5em;
 }
 
+#nav > ul > .current {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 #nav > ul > li > a {
 	display: block;
 	color: #eee;
